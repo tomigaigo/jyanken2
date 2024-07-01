@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="ja">
+<html>
+<head>
+	<meta charset="UTF-8">
+    <title>	じゃんけんしよう！</title>
+	<link rel="stylesheet" th:href="@{/css/common.css}">
+</head>
+<body>
+	<div class="main">
+		<center>
+	    <h1>じゃんけんしよう！</h1>
+	    <form action="/submit" method="post">
+	        <button type="submit" name="action" value="button1">グー</button>
+	        <button type="submit" name="action" value="button2">チョキ</button>
+	        <button type="submit" name="action" value="button3">パー</button>
+	    </form>
+		</center>
+		<audio id="sound" preload="auto">
+		     <source th:src="@{/sound/jyankenpon.wav}" type="audio/wav">
+		</audio>
+	</div>
+	
+	
+<!--	<form method="post" action="/submit">-->
+	
+<!--	    <p>-->
+<!--	    <input type="submit" src="images/sgoo.png" alt="送信1" name="action" value="button1">-->
+<!--	    <input type="submit" src="images/scyoki.png" alt="送信2" name="action" value="button2">-->
+<!--	    <input type="submit" src="images/spaa.png" alt="送信3" name="action" value="button3">-->
+<!--	    </p>-->
+	    
+<!--	    </form>-->
+</body>
+</html>
